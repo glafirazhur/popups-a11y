@@ -29,6 +29,14 @@
       -moz-tab-size: unset;
       tab-size: unset;
     }
+
+    .slide .shout.this-shout-top {
+      top: calc(50% - 60px);
+    }
+
+    .slide pre.modal-pre {
+      font-size: 18px;
+    }
   </style>
 </head>
   <body class="shower list">
@@ -39,7 +47,9 @@
     </header>
 
     <section class="slide">
-      <h2 class="shout">Ну вот и... всплыли</h2>
+      <h2 class="shout this-shout this-shout-top">Ну вот и... всплыли</h2>
+      <a href="https://www.youtube.com/watch?v=s6PI8pKQxgo" class="copyright right black">По мотивам доклада «Знакомьтесь, модальное окно»</a>
+      <img class="cover" src="pictures/main.png" alt="Dead mouse">
     </section>
 
     <section class="slide">
@@ -50,10 +60,10 @@
         <div>
           <h2>Глафира Жур</h2>
           <div>
-            <p class="info-text">Работаю в &nbsp;<img class="spurit-logo" src="pictures/spurit.png" alt="глафира жур"></p>
-            <p class="info-text-no-margin"><strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur">@GlafiraZhur</a></p>
+            <p class="info-text-no-margin">Frontend Developer в&nbsp;<img class="spurit-logo" src="pictures/spurit.png" alt="глафира жур"></p>
+            <p class="info-text"><strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur">@GlafiraZhur</a></p>
+            <br>
             <p class="info-text"><strong>Помогаю делать</strong>: <br><a href="https://twitter.com/MinskCSS">@MinskCSS</a> и <a href="https://twitter.com/MinskJS">@MinskJS</a>, <a href="https://twitter.com/a11yminsk">@a11yminsk</a></p>
-
           </div>
         </div>
 
@@ -89,7 +99,8 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">История</h2>
+      <h2 class="shout this-shout this-shout-top">История</h2>
+      <img class="cover" src="pictures/story.png" alt="Dead mouse">
     </section>
 
     <section class="slide">
@@ -168,6 +179,39 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout this-shout">Да кто такая <br>эта ваша модалка *****?!</h2>
+      <img class="cover" src="pictures/whomodal.png" alt="Dialog">
+    </section>
+
+    <!-- обычная -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide16.png" alt="Dialog">
+    </section>
+
+    <!-- корзина -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide17.png" alt="Dialog">
+    </section>
+
+    <!-- картинка раскрыта на всю ширину -->
+    <section class="slide cart-slide">
+      <img class="cover" src="pictures/slide18.png" alt="Dialog">
+
+      <style>
+        .slide.cart-slide::after {
+          left: initial;
+          right: 875px;
+        }
+      </style>
+
+    </section>
+
+    <!-- картинка раскрыта на всю ширину -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide19.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Модальные диалоги</h2>
     </section>
 
@@ -180,19 +224,21 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout">Что насчёт &lt;dialog&gt;?</h2>
-    </section>
-
-    <section class="slide">
-      <img class="slide-img" src="pictures/image-1.png" alt="Dialog">
-    </section>
-
-    <section class="slide">
       <img class="cover" src="pictures/slide15.png" alt="Dialog">
     </section>
 
     <section class="slide">
-      <h2>Структура модального окна (HTML)</h2>
+      <h2 class="shout this-shout">Что насчёт <br>&lt;dialog&gt;?</h2>
+      <a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element" class="copyright right black">dialog spec</a>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/image-1.png" alt="Dialog">
+      <a href="https://caniuse.com/#feat=dialog" class="copyright right black">Can I Use</a>
+    </section>
+
+    <section class="slide">
+      <h2>HTML модального окна</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal">
@@ -209,12 +255,6 @@
   &lt;/div>
   </code>
       </pre>
-
-      <style>
-        .slide pre.modal-pre {
-          font-size: 18px;
-        }
-      </style>
     </section>
 
     <section class="slide">
@@ -277,6 +317,66 @@
   &lt;/div>
   </code>
       </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="dont">Так нельзя!</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div class="modal">
+    &lt;header class="modal__header">
+      &lt;h2>Заголовок модального окна&lt;/h2>
+    &lt;/header>
+    ...
+    &lt;footer class="modal__footer">
+      &lt;!-- кнопки -->
+    &lt;/footer>
+    &lt;button>X&lt;/button>
+  &lt;/div>
+  </code>
+      </pre>
+      <style>
+        .slide h2.dont {
+          color: #f00;
+        }
+      </style>
+
+    </section>
+
+    <section class="slide">
+      <h2>Ошибка валидации в axe</h2>
+      <img class="slide-img" src="pictures/screen.png" alt="axe error">
+      <a  class="copyright right black" href="https://www.deque.com/axe/">Плагин axe</a>
+    </section>
+
+    <section class="slide">
+      <h2 class="dont">И даже так нельзя!</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;section class="modal" role="dialog">
+    &lt;header class="modal__header">
+      &lt;h2>Заголовок модального окна&lt;/h2>
+    &lt;/header>
+    ...
+    &lt;footer class="modal__footer">
+      &lt;!-- кнопки -->
+    &lt;/footer>
+    &lt;button>X&lt;/button>
+  &lt;/section>
+  </code>
+      </pre>
+      <style>
+        .slide h2.dont {
+          color: #f00;
+        }
+      </style>
+
+    </section>
+
+    <section class="slide">
+      <h2>Ошибка валидации в axe</h2>
+      <img class="slide-img" src="pictures/screen2.png" alt="axe error">
+      <a  class="copyright right black" href="https://www.deque.com/axe/">Плагин axe</a>
     </section>
 
     <section class="slide">
@@ -359,6 +459,42 @@
     </section>
 
     <section class="slide">
+      <h2>Чек-лист по верстке:</h2>
+      <ol class="check-list" style="font-size: 22px;">
+        <li class="next">Соблюдаем структуру модального окна</li>
+        <li class="next">Модальному окну даём<code>role="dialog"</code></li>
+        <li class="next">Заголовку даём <code>id="ID"</code></li>
+        <li class="next">Связываем заголовок с окном: <code>aria-labelledby="ID"</code></li>
+        <li class="next">Определяем тип окна <code>aria-modal="true"</code></li>
+      </ol>
+
+      <style>
+        .check-list {
+          list-style: none;
+        }
+        .check-list li {
+          position: relative;
+        }
+        .slide ol.check-list > li::before,
+        .slide ol.check-list li::before
+        {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          display: block;
+          width: 25px;
+          height: 25px;
+          background-image: url("pictures/correct.svg");
+          background-repeat: none;
+          background-size: 100%;
+        }
+
+      </style>
+
+    </section>
+
+    <section class="slide">
       <h2 class="shout">Поведение</h2>
     </section>
 
@@ -394,62 +530,37 @@
     </section>
 
     <section class="slide">
-      <h2>Прячем модальное окно</h2>
-      <pre>
+      <h2>Как скрыть модальное окно?</h2>
+      <pre class="next">
   <code class="language-css">
     .hidden {
       display: none;
     }
   </code>
       </pre>
-      <p>Мы не должны никак попасть внутрь модального окна. <br>
-        Можно протестировать с помощью Tab и скринридера</p>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout this-shout">Да кто такая <br>эта ваша модалка *****?!</h2>
-    </section>
-
-    <!-- обычная -->
-    <section class="slide">
-      <img class="cover" src="pictures/slide16.png" alt="Dialog">
-    </section>
-
-    <!-- корзина -->
-    <section class="slide">
-      <img class="cover" src="pictures/slide17.png" alt="Dialog">
-    </section>
-
-    <!-- картинка раскрыта на всю ширину -->
-    <section class="slide cart-slide">
-      <img class="cover" src="pictures/slide18.png" alt="Dialog">
-
-
-      <style>
-        .slide.cart-slide::after {
-          left: initial;
-          right: 875px;
-        }
-      </style>
-
-    </section>
-
-    <!-- картинка раскрыта на всю ширину -->
-    <section class="slide">
-      <img class="cover" src="pictures/slide19.png" alt="Dialog">
     </section>
 
      <section class="slide">
-      <h2>Итого:</h2>
-      <ol>
-        <li class="next">Хорошо прячьте скрытую модалку</li>
-        <li class="next">Правильно управляйте фокусом</li>
-        <li class="next">Давайте заголовок модальному окну</li>
-        <li class="next">Правильно размечайте кнопку закрытия</li>
-        <li class="next">Закрывайте по Esc!</li>
+      <h2>Чек-лист по поведению:</h2>
+      <ol class="check-list" style="font-size: 22px;">
+        <li class="next">Устанавливаем фокус внутрь окна (на кнопку закрытия)</li>
+        <li class="next">Делаем focus trap внутри окна</li>
+        <li class="next">Реализуем закрытие:
+          <ol>
+            <li class="next">по Esc</li>
+            <li class="next">по клику на кнопку закрытия</li>
+            <li class="next">по клику на overlay</li>
+          </ol>
+        </li>
+
+        <li class="next">Прячем модальное окно с помощью <code>display: none;</code></li>
+        <li class="next"><strong>ИЛИ</strong> тщательно скрываем способом из доклада Ани</li>
         <li class="next">... и</li>
-        <li class="next"><strong>Оставайтесь дома!</strong></li>
       </ol>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Остаёмся дома!</h2>
     </section>
 
     <section class="slide">
