@@ -1,220 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Доступные попапы</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+  <title>Доступные попапы</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
 
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+
+    .slide pre {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;;
+    }
+
+    .slide pre code {
+      display: unset;
+      margin-left: unset;
+      padding: unset;
+      width: unset;
+      line-height: unset;
+      white-space: unset;
+      -moz-tab-size: unset;
+      tab-size: unset;
+    }
+  </style>
 </head>
-<body class="shower list">
+  <body class="shower list">
 
     <header class="caption">
-        <h1>Доступные попапы</h1>
-        <p>Глафира Жур</p>
+      <h1>Доступные попапы</h1>
+      <p>Глафира Жур</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide">
+      <h2 class="shout">Ну вот и... всплыли</h2>
+    </section>
+
+    <section class="slide">
+      <div class="two-col-grid">
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+          <img src="pictures/glafira_zhur.jpg" alt="глафира жур">
         </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+        <div>
+          <h2>Глафира Жур</h2>
+          <div>
+            <p class="info-text">Работаю в &nbsp;<img class="spurit-logo" src="pictures/spurit.png" alt="глафира жур"></p>
+            <p class="info-text-no-margin"><strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur">@GlafiraZhur</a></p>
+            <p class="info-text"><strong>Помогаю делать</strong>: <br><a href="https://twitter.com/MinskCSS">@MinskCSS</a> и <a href="https://twitter.com/MinskJS">@MinskJS</a>, <a href="https://twitter.com/a11yminsk">@a11yminsk</a></p>
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <pre>
-            <code class="language-html">
-                <ol>
-                    <li>Built on HTML, CSS and JavaScript</li>
-                    <li>Works in all modern browsers</li>
-                    <li>Themes are separated from engine</li>
-                    <li>Fully keyboard accessible</li>
-                    <li>Printable to PDF</li>
-                </ol>
-            </code>
-        </pre>
-
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+          </div>
         </div>
-    </section>
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
         <style>
-            #picture h2 {
-                color: white;
-            }
+          .two-col-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+          }
+          .two-col-grid figure {
+            display: block;
+            text-align: center;
+          }
+          .two-col-grid figure img {
+            width: 90%;
+          }
+          .info-text {
+            font-size: 25px;
+            margin-bottom: 5px;
+          }
+
+          .slide p.info-text-no-margin {
+            margin-bottom: 0;
+          }
+
+          .spurit-logo {
+            max-width: 130px;
+            position: relative;
+            top: 4px;
+          }
         </style>
+      </div>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+      <h2 class="shout">История</h2>
     </section>
 
     <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
+      <img class="cover" src="pictures/slide1.png" alt="Dead mouse">
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <section class="slide">
+      <img class="cover" src="pictures/slide2.png" alt="Dead mouse">
+    </section>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+    <section class="slide">
+      <img class="cover" src="pictures/slide3.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/slide4.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/slide5.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/image2.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/slide6.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/slide7.png" alt="Dead mouse">
+    </section>
+
+    <section class="slide">
+      <h2 class="shout this-shout">Давайте поможем попапу</h2>
+      <img class="dasha" src="pictures/slide8.png" alt="Dasha the treveler">
+      <style>
+        .dasha {
+          position: absolute;
+          top: 75%;
+          left: 82%;
+          width: 180px;
+          transform: translate(-50%, -50%);
+        }
+        .this-shout {
+          font-size: 130px!important;
+        }
+      </style>
+    </section>
+
+    <!--section class="slide">
+      <h2>Пример 1</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Пример 2</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Пример 3</h2>
+    </section-->
+
+    <section class="slide">
+      <h2>Диалоги</h2>
+      <div class="two-col-grid">
+        <img class="next" src="pictures/slide9.png" alt="Dialog">
+        <img class="next" src="pictures/slide10.png" alt="Dialog modal">
+      </div>
+
+      <style>
+        .two-col-grid img {
+          width: 95%;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Модальные диалоги</h2>
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/subscription.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
+      <h2 class="shout this-shout">Структура модального окна</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout this-shout">Что насчёт &lt;dialog&gt;?</h2>
+    </section>
+
+    <section class="slide">
+      <img class="slide-img" src="pictures/image-1.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/slide15.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
+      <h2>Структура модального окна (HTML)</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div class="modal">
+    &lt;div class="modal__header">
+      &lt;h2>Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    &lt;div class="modal__content">
+      &lt;!-- контент -->
+    &lt;/div>
+    &lt;div class="modal__footer">
+      &lt;!-- кнопки -->
+    &lt;/div>
+    &lt;button>X&lt;/button>
+  &lt;/div>
+  </code>
+      </pre>
+
+      <style>
+        .slide pre.modal-pre {
+          font-size: 18px;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Accessibility</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Кнопка закрытия (сейчас)</h2>
+      <pre>
+  <code class="language-html">
+    &lt;button>X&lt;/button>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Прячем иконку от скринридера</h2>
+      <pre>
+  <code class="language-html">
+    &lt;button>
+      &lt;span aria-hidden="true">X&lt;/span>
+    &lt;/button>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Добавляем label для кнопки</h2>
+      <pre>
+  <code class="language-html">
+    &lt;button>
+      &lt;span aria-hidden="true">X&lt;/span>
+      &lt;span class="visually-hidden">Закрыть окно&lt;/span>
+    &lt;/button>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout this-shout">Добавим ARIA <br>для модалки</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Роль модального окна</h2>
+      <pre>
+  <code class="language-html">
+  &lt;div class="modal">
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Роль модального окна</h2>
+      <pre>
+  <code class="language-html">
+  &lt;div class="modal" role="dialog">
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Заголовок модального окна</h2>
+      <pre>
+  <code class="language-html">
+  &lt;div class="modal" role="dialog">
+    &lt;div class="modal__header">
+      &lt;h2>Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Заголовок модального окна</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div class="modal" role="dialog">
+    &lt;div class="modal__header">
+      &lt;h2 id="headingID">Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Заголовок модального окна</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div class="modal" role="dialog" aria-labelledby="headingID">
+    &lt;div class="modal__header">
+      &lt;h2 id="headingID">Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Тип модального окна</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div
+    class="modal"
+    role="dialog"
+    aria-labelledby="headingID"
+  >
+    &lt;div class="modal__header">
+      &lt;h2 id="headingID">Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Тип модального окна</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div
+    class="modal"
+    role="dialog"
+    aria-labelledby="headingID"
+    aria-modal="true"
+  >
+    &lt;div class="modal__header">
+      &lt;h2 id="headingID">Заголовок модального окна&lt;/h2>
+    &lt;/div>
+    ...
+  &lt;/div>
+  </code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Поведение</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Фокус - на кнопку закрытия окна</h2>
+      <img class="slide-img" src="pictures/slide11.png" alt="Dialog">
+
+      <style>
+        .slide-img {
+          width: 100%;
+        }
+      </style>
+    </section>
+
+    <section class="slide white-header">
+      <h2>Зацикливаем фокус в окнe (focus trap)</h2>
+      <figure>
+        <img class="slide-img" src="pictures/slide12.png" alt="Dialog">
+        <figcaption class="copyright right black">
+          <a href="https://github.com/davidtheclark/focus-trap">Focus-trap JS lib</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <h2>Закрываем модальное окно</h2>
+      <img class="slide-img" src="pictures/slide13.png" alt="Dialog">
+    </section>
+
+    <section class="slide ">
+      <h2>Возвращаем фокус на открывший элемент</h2>
+      <img class="slide-img" src="pictures/slide14.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
+      <h2>Прячем модальное окно</h2>
+      <pre>
+  <code class="language-css">
+    .hidden {
+      display: none;
+    }
+  </code>
+      </pre>
+      <p>Мы не должны никак попасть внутрь модального окна. <br>
+        Можно протестировать с помощью Tab и скринридера</p>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout this-shout">Да кто такая <br>эта ваша модалка *****?!</h2>
+    </section>
+
+    <!-- обычная -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide16.png" alt="Dialog">
+    </section>
+
+    <!-- корзина -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide17.png" alt="Dialog">
+    </section>
+
+    <!-- картинка раскрыта на всю ширину -->
+    <section class="slide cart-slide">
+      <img class="cover" src="pictures/slide18.png" alt="Dialog">
+
+
+      <style>
+        .slide.cart-slide::after {
+          left: initial;
+          right: 875px;
+        }
+      </style>
+
+    </section>
+
+    <!-- картинка раскрыта на всю ширину -->
+    <section class="slide">
+      <img class="cover" src="pictures/slide19.png" alt="Dialog">
+    </section>
+
+     <section class="slide">
+      <h2>Итого:</h2>
+      <ol>
+        <li class="next">Хорошо прячьте скрытую модалку</li>
+        <li class="next">Правильно управляйте фокусом</li>
+        <li class="next">Давайте заголовок модальному окну</li>
+        <li class="next">Правильно размечайте кнопку закрытия</li>
+        <li class="next">Закрывайте по Esc!</li>
+        <li class="next">... и</li>
+        <li class="next"><strong>Оставайтесь дома!</strong></li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2>Полезные ресурсы</h2>
+      <ol>
+        <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">W3C - Modal Dialog Example</a></li>
+        <li><a href="">Ещё ресурс</a></li>
+        <li><a href="">Ещё 1 ресурс</a></li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Спасибо за внимание!</h2>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+      <a href="https://github.com/shower/shower">Fork Shower on GitHub</a>
     </footer>
 
     <div class="progress"></div>
 
     <script src="shower/shower.min.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js"></script>
 
-</body>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+  </body>
 </html>
