@@ -104,8 +104,15 @@
     </section>
 
     <section class="slide">
+      <img class="cover" src="pictures/image-3.png" alt="Dead mouse">
+      <a href="https://thesak.com" class="copyright right black">The Sak</a>
+    </section>
+
+    <section class="slide">
       <img class="cover" src="pictures/slide1.png" alt="Dead mouse">
     </section>
+
+
 
     <section class="slide">
       <img class="cover" src="pictures/slide2.png" alt="Dead mouse">
@@ -154,17 +161,9 @@
       </style>
     </section>
 
-    <!--section class="slide">
-      <h2>Пример 1</h2>
-    </section>
-
     <section class="slide">
-      <h2>Пример 2</h2>
+      <img class="cover" src="pictures/slide17.png" alt="Dialog">
     </section>
-
-    <section class="slide">
-      <h2>Пример 3</h2>
-    </section-->
 
     <section class="slide">
       <h2>Диалоги</h2>
@@ -185,17 +184,12 @@
       <img class="cover" src="pictures/whomodal.png" alt="Dialog">
     </section>
 
-    <!-- обычная -->
+    <!-- форма -->
     <section class="slide">
       <img class="cover" src="pictures/slide16.png" alt="Dialog">
     </section>
 
     <!-- корзина -->
-    <section class="slide">
-      <img class="cover" src="pictures/slide17.png" alt="Dialog">
-    </section>
-
-    <!-- картинка раскрыта на всю ширину -->
     <section class="slide cart-slide">
       <img class="cover" src="pictures/slide18.png" alt="Dialog">
 
@@ -205,12 +199,21 @@
           right: 875px;
         }
       </style>
-
     </section>
 
     <!-- картинка раскрыта на всю ширину -->
     <section class="slide">
       <img class="cover" src="pictures/slide19.png" alt="Dialog">
+    </section>
+
+    <!-- реальные примеры -->
+
+    <section class="slide">
+      <img class="cover" src="pictures/screen1.png" alt="Dialog">
+    </section>
+
+    <section class="slide">
+      <img class="cover" src="pictures/screen3.png" alt="Dialog">
     </section>
 
     <section class="slide">
@@ -260,8 +263,19 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Accessibility</h2>
+      <h2 class="shout this-shout">Добавим <br>немного A11Y</h2>
+      <img class="cover opacity" src="pictures/salt.jpg" alt="Dialog">
+
+      <style>
+        .opacity {
+          opacity: 0.2;
+          max-height: initial;
+          width: 120%;
+        }
+      </style>
+
     </section>
+
 
     <section class="slide">
       <h2>Кнопка закрытия (сейчас)</h2>
@@ -295,9 +309,6 @@
       </pre>
     </section>
 
-    <section class="slide">
-      <h2 class="shout this-shout">Добавим ARIA <br>для модалки</h2>
-    </section>
 
     <section class="slide">
       <h2>Роль модального окна</h2>
@@ -322,7 +333,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="dont">Так нельзя!</h2>
+      <h2 class="next dont">Так нельзя!</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal">
@@ -352,7 +363,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="dont">И даже так нельзя!</h2>
+      <h2 class="next dont">Так тоже нельзя!</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;section class="modal" role="dialog">
@@ -379,6 +390,32 @@
       <h2>Ошибка валидации в axe</h2>
       <img class="slide-img" src="pictures/screen2.png" alt="axe error">
       <a  class="copyright right black" href="https://www.deque.com/axe/">Плагин axe</a>
+    </section>
+
+    <section class="slide">
+      <h2>Валидный вариант</h2>
+      <pre class="modal-pre">
+  <code class="language-html">
+  &lt;div class="modal">
+    &lt;section>
+      &lt;header class="modal__header">
+        &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;/header>
+      ...
+      &lt;footer class="modal__footer">
+        &lt;!-- кнопки -->
+      &lt;/footer>
+    &lt;/section>
+    &lt;button>X&lt;/button>
+  &lt;/div>
+  </code>
+      </pre>
+      <style>
+        .slide h2.dont {
+          color: #f00;
+        }
+      </style>
+
     </section>
 
     <section class="slide">
@@ -462,7 +499,7 @@
 
     <section class="slide">
       <h2>Чек-лист по верстке:</h2>
-      <ol class="check-list" style="font-size: 22px;">
+      <ol class="check-list">
         <li class="next">Соблюдаем структуру модального окна</li>
         <li class="next">Модальному окну даём<code>role="dialog"</code></li>
         <li class="next">Заголовку даём <code>id="ID"</code></li>
@@ -473,6 +510,7 @@
       <style>
         .check-list {
           list-style: none;
+          margin-left: 40px;
         }
         .check-list li {
           position: relative;
