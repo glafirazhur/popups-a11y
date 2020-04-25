@@ -47,27 +47,26 @@
 
     <header class="caption">
       <h1>Ну вот и... всплыли!</h1>
-      <p>Глафира Жур для MinskCSS №8 #StayHome</p>
+      <p>Glafira Zhur</p>
     </header>
 
     <section class="slide">
       <h2 class="shout this-shout this-shout-top">Ну вот и... всплыли</h2>
-      <a href="https://www.youtube.com/watch?v=s6PI8pKQxgo" class="copyright right black">По мотивам доклада «Знакомьтесь, модальное окно»</a>
       <img class="cover" src="pictures/main.png" alt="Dead mouse">
     </section>
 
     <section class="slide">
       <div class="two-col-grid">
         <figure>
-          <img src="pictures/glafira_zhur.jpg" alt="глафира жур">
+          <img src="pictures/glafira_zhur.jpg" alt="glafira zhur">
         </figure>
         <div>
-          <h2>Глафира Жур</h2>
+          <h2>Glafira Zhur</h2>
           <div>
-            <p class="info-text-no-margin">Frontend Developer в&nbsp;<img class="spurit-logo" src="pictures/spurit.png" alt="глафира жур"></p>
+            <p class="info-text-no-margin">Frontend Developer at&nbsp;<img class="spurit-logo" src="pictures/spurit.png" alt="глафира жур"></p>
             <p class="info-text"><strong>Twitter</strong>: <a href="https://twitter.com/glafirazhur">@GlafiraZhur</a></p>
             <br>
-            <p class="info-text"><strong>Помогаю делать</strong>: <br><a href="https://twitter.com/MinskCSS">@MinskCSS</a> и <a href="https://twitter.com/MinskJS">@MinskJS</a>, <a href="https://twitter.com/a11yminsk">@a11yminsk</a></p>
+            <p class="info-text"><strong>Program committee member</strong>: <br><a href="https://twitter.com/MinskCSS">@MinskCSS</a> и <a href="https://twitter.com/MinskJS">@MinskJS</a>, <a href="https://twitter.com/a11yminsk">@a11yminsk</a></p>
           </div>
         </div>
 
@@ -103,7 +102,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout this-shout-top">История</h2>
+      <h2 class="shout this-shout this-shout-top">Story</h2>
       <img class="cover" src="pictures/story.png" alt="Dead mouse">
     </section>
 
@@ -147,8 +146,8 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout">Давайте поможем попапу</h2>
-      <img class="dasha" src="pictures/slide8.png" alt="Dasha the treveler">
+      <h2 class="shout this-shout">Let's help the popup!</h2>
+      <img class="dasha" src="pictures/slide8.png" alt="Dasha the traveler">
       <style>
         .dasha {
           position: absolute;
@@ -219,7 +218,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Модальные диалоги</h2>
+      <h2 class="shout">Modal dialog</h2>
     </section>
 
     <section class="slide">
@@ -227,7 +226,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout">Структура модального окна</h2>
+      <h2 class="shout this-shout">Modal window structure</h2>
     </section>
 
     <section class="slide">
@@ -235,7 +234,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout">Тег <br>&lt;dialog&gt;</h2>
+      <h2 class="shout this-shout">&lt;dialog&gt; tag</h2>
       <a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element" class="copyright right black">dialog spec</a>
     </section>
 
@@ -245,17 +244,17 @@
     </section>
 
     <section class="slide">
-      <h2>HTML модального окна</h2>
+      <h2>Modal window HTML</h2>
       <pre class="modal-pre"><code class="language-html">
   &lt;div class="modal">
     &lt;div class="modal__header">
-      &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;h2>Modal window heading&lt;/h2>
     &lt;/div>
     &lt;div class="modal__content">
-      &lt;!-- контент -->
+      &lt;!-- content -->
     &lt;/div>
     &lt;div class="modal__footer">
-      &lt;!-- кнопки -->
+      &lt;!-- buttons/actions -->
     &lt;/div>
     &lt;button>X&lt;/button>
   &lt;/div>
@@ -263,7 +262,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout this-shout">Добавим <br>немного A11Y</h2>
+      <h2 class="shout this-shout">Let's add <br>a little bit of A11Y</h2>
       <img class="cover opacity" src="pictures/salt.jpg" alt="Dialog">
 
       <style>
@@ -278,7 +277,7 @@
 
 
     <section class="slide">
-      <h2>Кнопка закрытия (сейчас)</h2>
+      <h2>Close button (now)</h2>
       <pre>
   <code class="language-html">
     &lt;button>X&lt;/button>
@@ -286,7 +285,7 @@
     </section>
 
     <section class="slide">
-      <h2>Прячем иконку от скринридера</h2>
+      <h2>Hide the icon from the Screen Reader</h2>
       <pre>
   <code class="language-html">
     &lt;button>
@@ -296,19 +295,19 @@
     </section>
 
     <section class="slide">
-      <h2>Добавляем label для кнопки</h2>
+      <h2>Add label for the button</h2>
       <pre>
   <code class="language-html">
     &lt;button>
       &lt;span aria-hidden="true">X&lt;/span>
-      &lt;span class="visually-hidden">Закрыть окно&lt;/span>
+      &lt;span class="visually-hidden">Close modal&lt;/span>
     &lt;/button>
   </code></pre>
     </section>
 
 
     <section class="slide">
-      <h2>Роль модального окна</h2>
+      <h2>Modal window ROLE</h2>
       <pre>
   <code class="language-html">
   &lt;div class="modal">
@@ -318,7 +317,7 @@
     </section>
 
     <section class="slide">
-      <h2>Роль модального окна</h2>
+      <h2>Modal window ROLE</h2>
       <pre>
   <code class="language-html">
   &lt;div class="modal" role="dialog">
@@ -328,36 +327,35 @@
     </section>
 
     <section class="slide">
-      <h2>Header и Footer модального окна</h2>
+      <h2>Header & Footer</h2>
       <pre><code class="language-html">
     &lt;div class="modal__header">
-      &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;h2>Modal window heading&lt;/h2>
     &lt;/div>
         ...
     &lt;div class="modal__footer">
-      &lt;!-- кнопки -->
+      &lt;!-- buttons/actions -->
     &lt;/div>
       </code></pre>
     </section>
 
     <section class="slide">
       <img class="cover" src="pictures/screen5.png" alt="axe error">
-      <a  class="copyright right white" href="https://www.deque.com/axe/">Плагин axe</a>
+      <a  class="copyright right white" href="https://www.deque.com/axe/">axe extension</a>
     </section>
 
     <section class="slide">
-      <h2 class="next dont">Так нельзя!</h2>
+      <h2 class="next dont">Don't do this!</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal">
     &lt;header class="modal__header">
-      &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;h2>Modal window heading&lt;/h2>
     &lt;/header>
     ...
     &lt;footer class="modal__footer">
-      &lt;!-- кнопки -->
+      &lt;!-- buttons/actions -->
     &lt;/footer>
-    &lt;button>X&lt;/button>
   &lt;/div>
   </code></pre>
 
@@ -371,50 +369,48 @@
     </section>
 
     <section class="slide">
-      <h2>Ошибка валидации в axe</h2>
+      <h2>axe validation errors</h2>
       <img class="slide-img" src="pictures/screen.png" alt="axe error">
-      <a  class="copyright right black" href="https://www.deque.com/axe/">Плагин axe</a>
+      <a  class="copyright right black" href="https://www.deque.com/axe/">axe extension</a>
     </section>
 
     <section class="slide">
-      <h2 class="next dont">Так тоже нельзя!</h2>
+      <h2 class="next dont">Don't do this too!</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;section class="modal" role="dialog">
     &lt;header class="modal__header">
-      &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;h2>Modal window heading&lt;/h2>
     &lt;/header>
     ...
     &lt;footer class="modal__footer">
-      &lt;!-- кнопки -->
+      &lt;!-- buttons/actions -->
     &lt;/footer>
-    &lt;button>X&lt;/button>
   &lt;/section>
   </code></pre>
       <img src="pictures/cross.svg" class="cover next" alt="Cross" style="z-index: 1000;">
     </section>
 
     <section class="slide">
-      <h2>Ошибка валидации в axe</h2>
+      <h2>axe validation errors</h2>
       <img class="slide-img" src="pictures/screen2.png" alt="axe error">
-      <a  class="copyright right black" href="https://www.deque.com/axe/">Плагин axe</a>
+      <a  class="copyright right black" href="https://www.deque.com/axe/">axe extension</a>
     </section>
 
     <section class="slide">
-      <h2>Валидный вариант</h2>
+      <h2>Valid case</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal">
     &lt;section>
       &lt;header class="modal__header">
-        &lt;h2>Заголовок модального окна&lt;/h2>
+        &lt;h2>Modal window heading&lt;/h2>
       &lt;/header>
       ...
       &lt;footer class="modal__footer">
-        &lt;!-- кнопки -->
+        &lt;!-- buttons/actions -->
       &lt;/footer>
     &lt;/section>
-    &lt;button>X&lt;/button>
   &lt;/div>
   </code></pre>
       <style>
@@ -426,12 +422,12 @@
     </section>
 
     <section class="slide">
-      <h2>Заголовок модального окна</h2>
+      <h2>Modal window heading</h2>
       <pre>
   <code class="language-html">
   &lt;div class="modal" role="dialog">
     &lt;div class="modal__header">
-      &lt;h2>Заголовок модального окна&lt;/h2>
+      &lt;h2>Modal window heading&lt;/h2>
     &lt;/div>
     ...
   &lt;/div>
@@ -439,12 +435,12 @@
     </section>
 
     <section class="slide">
-      <h2>Заголовок модального окна</h2>
+      <h2>Modal window heading</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal" role="dialog">
     &lt;div class="modal__header">
-      &lt;h2 id="subscribeModal">Заголовок модального окна&lt;/h2>
+      &lt;h2 id="subscribeModal">Modal window heading&lt;/h2>
     &lt;/div>
     ...
   &lt;/div>
@@ -452,12 +448,12 @@
     </section>
 
     <section class="slide">
-      <h2>Заголовок модального окна</h2>
+      <h2>Modal window heading</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div class="modal" role="dialog" aria-labelledby="subscribeModal">
     &lt;div class="modal__header">
-      &lt;h2 id="subscribeModal">Заголовок модального окна&lt;/h2>
+      &lt;h2 id="subscribeModal">Modal window heading&lt;/h2>
     &lt;/div>
     ...
   &lt;/div>
@@ -465,7 +461,7 @@
     </section>
 
     <section class="slide">
-      <h2>Тип модального окна</h2>
+      <h2>Modal window type</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div
@@ -474,7 +470,7 @@
     aria-labelledby="subscribeModal"
   >
     &lt;div class="modal__header">
-      &lt;h2 id="subscribeModal">Заголовок модального окна&lt;/h2>
+      &lt;h2 id="subscribeModal">Modal window heading&lt;/h2>
     &lt;/div>
     ...
   &lt;/div>
@@ -482,7 +478,7 @@
     </section>
 
     <section class="slide">
-      <h2>Тип модального окна</h2>
+      <h2>Modal window type</h2>
       <pre class="modal-pre">
   <code class="language-html">
   &lt;div
@@ -492,7 +488,7 @@
     aria-modal="true"
   >
     &lt;div class="modal__header">
-      &lt;h2 id="subscribeModal">Заголовок модального окна&lt;/h2>
+      &lt;h2 id="subscribeModal">Modal window heading&lt;/h2>
     &lt;/div>
     ...
   &lt;/div>
@@ -500,13 +496,13 @@
     </section>
 
     <section class="slide">
-      <h2>Чек-лист по верстке</h2>
+      <h2>HTML and a11y check-list</h2>
       <ol class="check-list">
-        <li class="next">Соблюдаем структуру модального окна</li>
-        <li class="next">Модальному окну даём<code>role="dialog"</code></li>
-        <li class="next">Заголовку даём <code>id="ID"</code></li>
-        <li class="next">Связываем заголовок с окном: <code>aria-labelledby="ID"</code></li>
-        <li class="next">Определяем тип окна <code>aria-modal="true"</code></li>
+        <li class="next">Follow the right structure</li>
+        <li class="next">Give the <code>role="dialog"</code> for the modal</li>
+        <li class="next">Give the <code>id="ID"</code> for the heading</li>
+        <li class="next">Connect our heading with the modal: <code>aria-labelledby="ID"</code></li>
+        <li class="next">Set the type for the window <code>aria-modal="true"</code></li>
       </ol>
 
       <style>
@@ -536,11 +532,11 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Поведение</h2>
+      <h2 class="shout">Behavior</h2>
     </section>
 
     <section class="slide">
-      <h2>Устанавливаем фокус на кнопку закрытия окна</h2>
+      <h2>Set focus to the Close button</h2>
       <img class="slide-img" src="pictures/slide11.png" alt="Dialog">
 
       <style>
@@ -551,7 +547,7 @@
     </section>
 
     <section class="slide white-header">
-      <h2>Зацикливаем фокус в окнe (focus trap)</h2>
+      <h2>Make a Focus Trap</h2>
       <figure>
         <img class="slide-img" src="pictures/slide12.png" alt="Dialog">
         <figcaption class="copyright right black">
@@ -561,17 +557,17 @@
     </section>
 
     <section class="slide">
-      <h2>Закрываем модальное окно</h2>
+      <h2>Close the modal window</h2>
       <img class="slide-img" src="pictures/slide13.png" alt="Dialog">
     </section>
 
     <section class="slide ">
-      <h2>Возвращаем фокус на открывший элемент</h2>
+      <h2>Set focus to the opening element</h2>
       <img class="slide-img" src="pictures/slide14.png" alt="Dialog">
     </section>
 
     <section class="slide">
-      <h2>Как скрыть модальное окно?</h2>
+      <h2>How to hide the modal?</h2>
       <pre class="next">
   <code class="language-css">
     .hidden {
@@ -581,20 +577,20 @@
     </section>
 
      <section class="slide">
-      <h2>Чек-лист по поведению</h2>
+      <h2>Behaviour check-list</h2>
       <ol class="check-list" style="font-size: 22px;">
-        <li class="next">Устанавливаем фокус внутрь окна (на кнопку закрытия)</li>
-        <li class="next">Делаем focus trap внутри окна</li>
-        <li class="next">Реализуем закрытие:
+        <li class="next">Set focus inside the window (Close button)</li>
+        <li class="next">Make the focus trap</li>
+        <li class="next">Close the modal:
           <ol>
-            <li class="next">по Esc</li>
-            <li class="next">по клику на кнопку закрытия</li>
-            <li class="next">по клику на overlay</li>
+            <li class="next">by Esc</li>
+            <li class="next">by the Close Button click</li>
+            <li class="next">by the overlay click (think about it)</li>
           </ol>
         </li>
 
-        <li class="next">Прячем модальное окно с помощью <code>display: none;</code></li>
-        <li class="next">... и</li>
+        <li class="next">Hide the modal: <code>display: none;</code></li>
+        <li class="next">... and</li>
       </ol>
     </section>
 
@@ -603,40 +599,41 @@
     </section>
 
     <section class="slide">
-      <h2 class="shout">Выводы</h2>
+      <h2 class="shout">Conclusions</h2>
+    </section>
+
+
+    <!-- Three years ago a friend of mine told the same story about the modal...-->
+    <section class="slide">
+      <h2 class="shout">Let's see what's changed</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Что поменялось<br> за 3 года?</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">НИЧЕГО</h2>
+      <h2 class="shout">NOTHING</h2>
       <img class="cover" src="pictures/slide21.png" alt="Dialog">
     </section>
 
     <section class="slide">
-      <h2 class="shout">НИЧЕГО</h2>
+      <h2 class="shout">NOTHING</h2>
       <img class="cover" src="pictures/slide22.png" alt="Dialog">
     </section>
 
     <section class="slide">
-      <h2 class="shout">НИЧЕГО</h2>
+      <h2 class="shout">NOTHING</h2>
       <img class="cover" src="pictures/slide20.png" alt="Dialog">
     </section>
 
     <section class="slide">
-      <h2>Полезные ресурсы</h2>
+      <h2>Useful links</h2>
       <ol>
         <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">W3C WAI-ARIA practices - Modal Dialog Example</a></li>
         <li><a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element">Dialog HTML specification</a></li>
-        <li><a href="https://www.youtube.com/watch?v=s6PI8pKQxgo">«Знакомьтесь, модальное окно» - Анна Селезнёва (YouTube)</a></li>
-        <li><a href="https://twitter.com/IoannaTalasli/status/1240200174636535810">Способы тестирования доступности (Twitter)</a></li>
+        <li><a href="https://twitter.com/IoannaTalasli/status/1240200174636535810">How to test the #a11y (Twitter)</a></li>
       </ol>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Спасибо за внимание!</h2>
+      <h2 class="shout">Thank you!</h2>
     </section>
 
     <footer class="badge">
